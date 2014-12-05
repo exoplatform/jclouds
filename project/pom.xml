@@ -738,7 +738,7 @@
                 <configuration>
                   <encoding>${project.build.sourceEncoding}</encoding>
                   <quiet>true</quiet>
-                  <maxmemory>256m</maxmemory>
+                  <maxmemory>1g</maxmemory>
                 </configuration>
                 <reportSets>
                   <reportSet>
@@ -843,7 +843,7 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.9</version>
           <configuration>
-            <maxmemory>256m</maxmemory>
+            <maxmemory>1g</maxmemory>
             <encoding>${project.build.sourceEncoding}</encoding>
             <quiet>true</quiet>
             <links>
