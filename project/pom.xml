@@ -78,10 +78,10 @@
   </mailingLists>
 
   <scm>
-    <connection>scm:git:https://git-wip-us.apache.org/repos/asf/jclouds.git</connection>
-    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/jclouds.git</developerConnection>
-    <url>https://git-wip-us.apache.org/repos/asf?p=jclouds.git</url>
+    <connection>scm:git:git://github.com/exoplatform/jclouds.git</connection>
+    <developerConnection>scm:git:git@github.com:exoplatform/jclouds.git</developerConnection>
     <tag>HEAD</tag>
+    <url>https://github.com/exoplatform/jclouds</url>
   </scm>
   
   <repositories>
@@ -110,6 +110,10 @@
   </pluginRepositories>
 
   <distributionManagement>
+    <repository>
+      <id>repository.exoplatform.org</id>
+      <url>${exo.releases.repo.url}</url>
+    </repository> 
     <site>
       <id>jclouds-github-pages-site</id>
       <url>${maven.site.url.base}/${project.version}</url>
@@ -212,6 +216,8 @@
     <jclouds.test.listener>org.jclouds.test.testng.UnitTestStatusListener</jclouds.test.listener>
     <test.ssh.keyfile />
     <sourceReleaseAssemblyDescriptor>source-release-zip-tar</sourceReleaseAssemblyDescriptor>
+    <!-- eXo Releases Repository URLs -->
+    <exo.releases.repo.url>https://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
   </properties>
 
   <dependencyManagement>
